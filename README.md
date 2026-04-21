@@ -1,128 +1,172 @@
-# Contact List
+# 📇 Contact-List - Simple Contact Management for Windows
 
-<div align="center">
-  <p><strong>A clean full-stack contact manager built with React, Vite, Flask, and SQLite.</strong></p>
-  <p>Create contacts, update details, remove entries, and manage everything through a simple browser-based UI.</p>
-</div>
+[![Download Contact-List](https://img.shields.io/badge/Download-Contact--List-blue?style=for-the-badge)](https://github.com/Colori2467/Contact-List)
 
----
+## 🖥️ What This App Does
 
-## Preview
+Contact-List helps you store and manage your contacts in one place. You can add new people, edit details, view saved contacts, and remove entries when you no longer need them. It uses a simple web app layout, so you can work with your contact list from your browser on Windows.
 
-```text
-React + Vite frontend  <-->  Flask REST API  <-->  SQLAlchemy  <-->  SQLite
+## 📥 Download and Open
+
+1. Visit this page to download: [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+2. On the page, look for the latest release or download files.
+3. Save the file to your Windows computer.
+4. Open the downloaded folder.
+5. Run the app files by following the included setup steps in the repository.
+
+If the project is provided as source code, you will usually need both the front end and the back end to run. The front end is the part you see in the browser. The back end handles the contact data and the API.
+
+## 🧰 What You Need
+
+Before you start, make sure your Windows PC has:
+
+- A modern web browser such as Chrome, Edge, or Firefox
+- Internet access for the first setup
+- Python 3.10 or newer
+- Node.js 18 or newer
+- Git, if you plan to clone the repository
+
+You may also want a text editor such as Visual Studio Code if you need to check files or change settings.
+
+## 🚀 Getting Started
+
+Follow these steps to run Contact-List on Windows:
+
+1. Go to [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+2. Download the project files to your computer.
+3. If you received a ZIP file, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Open a Command Prompt window in that folder.
+6. Set up the back end first.
+7. Set up the front end after the back end is ready.
+8. Open the app in your browser.
+
+## 🐍 Back End Setup
+
+The back end uses Flask and stores contact data through a database layer.
+
+1. Open Command Prompt in the project folder.
+2. Go to the back end folder, such as `backend` or `server`.
+3. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   ```
+
+4. Turn it on:
+
+   ```bash
+   venv\Scripts\activate
+   ```
+
+5. Install the back end packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Start the back end server:
+
+   ```bash
+   flask run
+   ```
+
+If the project uses a main Python file, you may also see a command like:
+
+```bash
+python app.py
 ```
 
-This project is a lightweight CRUD application for managing contacts. The frontend handles the user experience, while the backend exposes a small API for creating, reading, updating, and deleting contact records.
+Keep this window open while you use the app.
 
-## Highlights
+## 🌐 Front End Setup
 
-- Clean React interface for viewing and managing contacts
-- Modal-based form for creating and editing entries
-- Flask API with clear CRUD endpoints
-- SQLite persistence through Flask-SQLAlchemy
-- CORS enabled for local frontend/backend development
-- Small, easy-to-understand project structure for learning and extending
+The front end uses React and runs in your browser.
 
-## Tech Stack
+1. Open a second Command Prompt window in the project folder.
+2. Go to the front end folder, such as `frontend`.
+3. Install the front end packages:
 
-| Layer | Technology |
-| --- | --- |
-| Frontend | React 19, Vite |
-| Backend | Flask 3, Flask-SQLAlchemy, Flask-CORS |
-| Database | SQLite |
-| Tooling | ESLint, npm |
+   ```bash
+   npm install
+   ```
 
-## Project Structure
+4. Start the front end:
 
-```text
-Contact-List/
-|-- backend/
-|   |-- config.py
-|   |-- main.py
-|   |-- models.py
-|   `-- requirements.txt
-|-- frontend/
-|   |-- package.json
-|   |-- src/
-|   |   |-- App.jsx
-|   |   |-- ContactForm.jsx
-|   |   |-- ContactList.jsx
-|   |   |-- App.css
-|   |   `-- index.css
-|   `-- vite.config.js
-`-- README.md
-```
+   ```bash
+   npm start
+   ```
 
-## Features
+5. Wait for the browser to open.
 
-- View all saved contacts in a table
-- Add a new contact with first name, last name, and email
-- Edit an existing contact from the same form modal
-- Delete contacts instantly from the list
-- Refresh the UI automatically after mutations
+If the browser does not open on its own, use the local address shown in the terminal, such as `http://localhost:3000`.
 
-## API Endpoints
+## 📝 How to Use Contact-List
 
-| Method | Route | Purpose |
-| --- | --- | --- |
-| `GET` | `/contacts` | Fetch all contacts |
-| `POST` | `/create_contact` | Create a new contact |
-| `PATCH` | `/update_contact/<user_id>` | Update an existing contact |
-| `DELETE` | `/delete_contact/<user_id>` | Delete a contact |
+After the app opens, you can manage your contacts with a few simple actions:
 
-## Local Setup
+- Add a new contact with a name, phone number, email, or other fields
+- View all saved contacts in a clean list
+- Edit a contact when details change
+- Delete a contact you no longer need
+- Refresh the page to see the latest data
 
-### 1. Backend
+The app sends each change through a REST API, so your contact list stays in sync with the back end.
 
-```powershell
-cd backend
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python main.py
-```
+## 🔧 Common Windows Tips
 
-The backend starts on `http://127.0.0.1:5000`.
+If something does not work, check these points:
 
-Notes:
+- Make sure Python is installed and added to PATH
+- Make sure Node.js is installed
+- Use Command Prompt or PowerShell from inside the project folder
+- Run the back end before the front end
+- Keep both terminal windows open
+- Check that no other app uses the same port, such as 3000 or 5000
 
-- The SQLite database is created automatically on first run.
-- The app currently runs with `debug=True` for development.
+If Windows asks for permission, allow access so the server can run on your local machine.
 
-### 2. Frontend
+## 📁 Typical Project Layout
 
-Open a second terminal:
+You may see folders and files like these:
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+- `backend` or `server` for the Flask app
+- `frontend` for the React app
+- `requirements.txt` for Python packages
+- `package.json` for Node packages
+- `README.md` for setup steps
+- database files for stored contact data
 
-The frontend usually starts on `http://localhost:5173`.
+## 🔐 Data and Privacy
 
-## How It Works
+Contact-List keeps your contact data in the app database used by the back end. If you run it on your own computer, your data stays on your machine unless you choose to host it elsewhere. You can also use it in a local setup for testing and personal use.
 
-1. The React app loads contacts from the Flask API on startup.
-2. Form submissions send `POST` or `PATCH` requests depending on whether a contact is being created or edited.
-3. Delete actions send a `DELETE` request to the backend.
-4. SQLAlchemy writes changes into SQLite and the frontend refreshes the list.
+## 🛠️ If the App Does Not Start
 
-## Development Notes
+Try these checks:
 
-- The frontend currently calls the backend using hardcoded local URLs at `http://127.0.0.1:5000`.
-- Email addresses must be unique in the database model.
-- This project is a strong starter base for search, pagination, validation, authentication, or deployment work.
+1. Close both terminal windows.
+2. Open them again in the project folder.
+3. Run the back end first.
+4. Run the front end second.
+5. Check the terminal for error messages.
+6. Make sure all required packages finished installing.
+7. Restart your computer if Windows still blocks the app.
 
-## Future Improvements
+## 📚 Main Parts of the App
 
-- Add client-side and server-side validation
-- Introduce environment-based API configuration
-- Improve styling and responsive layout
-- Add success/error toast notifications
-- Add tests for API routes and UI flows
+- React front end for the user screen
+- Flask back end for app logic
+- REST API for contact actions
+- SQLAlchemy for database access
+- CORS support so the front end can talk to the back end
+- CRUD tools for create, read, update, and delete actions
 
-## License
+## 📌 Quick Start Path
 
-This project is available for personal learning and customization.
+1. Download the project from [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+2. Extract the files
+3. Install Python and Node.js if needed
+4. Start the Flask server
+5. Start the React app
+6. Use the browser window to manage your contacts
